@@ -1,0 +1,17 @@
+{
+  "name": "graph-objects",
+  "description": "Facebook Graph API Mapper",
+  "version": "0.0.0",
+  "author": "Keisuke SATO <sato@crocos.co.jp>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/riaf/graph-object"
+  },
+  "bugs": {
+    "url": "http://github.com/riaf/graph-object/issues"
+  },
+  "dependencies": {
+    "grunt-coffee": "git://github.com/riaf/grunt-coffee.git"
+  }
+}
