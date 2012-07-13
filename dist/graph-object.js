@@ -3,16 +3,18 @@
 
   GraphObject = (function() {
 
-    GraphObject.prototype.props = {};
+    GraphObject.props = {};
 
-    GraphObject.prototype._changed_keys = [];
-
-    GraphObject.prototype.options = {};
+    GraphObject._changed_keys = [];
 
     function GraphObject(path, options) {
+      var _ref;
       this.path = path;
       this.options = options;
       this.sync(this.path);
+      if ((_ref = this.options) == null) {
+        this.options = {};
+      }
     }
 
     GraphObject.prototype.get = function(name, default_value) {

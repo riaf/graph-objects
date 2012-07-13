@@ -5,12 +5,12 @@
 #
 
 class GraphObject
-  props: {}
-  _changed_keys: []
-  options: {}
+  @props: {}
+  @_changed_keys: []
 
   constructor: (@path, @options) ->
     @sync @path
+    @options ?= {}
 
   get: (name, default_value) ->
     if name of @props
